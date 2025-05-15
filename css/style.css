@@ -18,10 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
-  width: 100%;
+html, body {
   overflow-x: hidden;
+  width: 100%;
 }
+
 
 header{
     height: 100vh;
@@ -112,6 +113,75 @@ header{
   }
   
 
+  /* Hamburger menu for phone */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  margin-right: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger span {
+  height: 4.5px;
+  background: #00f5d4; 
+  border-radius: 4px;
+}
+
+/* Hide menu initially */
+#menu-toggle {
+  display: none;
+}
+
+.nav-menu {
+  display: none;
+  gap: 20px;
+  width: 100px;
+  background-color: #213448;
+  opacity: 0;
+  visibility: hidden; 
+  }
+
+.hamitem{
+  text-decoration: none;
+  color: #00ffe0;
+  font-family: "Lexend", sans-serif;
+}
+
+#menu-toggle:checked + .hamburger + .nav-menu {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+/* Responsive part for phone */
+@media (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 40%;
+    flex-direction: column;
+    background: #213448;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+  }
+}
+
+
 .navbar {
     display: flex;
     height: 100%;
@@ -130,7 +200,6 @@ header{
     font-size: 18px;
     font-weight: bold;
     justify-content: flex-end;
-    transition: all 1s;
     align-items: center;
 }
 
@@ -166,10 +235,6 @@ header{
   width: 30px;
 }
 
-.dropdown {
-  position: relative;
-  display: none;
-}
 
 
 
@@ -459,6 +524,27 @@ header{
   width: 35px;
   height: 35px;
 }
+
+.introsection {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  #intro {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #introtitle,
+  #intropara,
+  .socialicons,
+  .buttons {
+    margin-left: 0;
+  }
 
 }
 
@@ -1375,6 +1461,45 @@ h7 {
   }
 }
 
+/* Fix for white space on mobile */
+
+
+
+@media only screen and (max-width: 400px) {
+  
+  .skillpara,
+  .project-card,
+  .glass-card {
+    max-width: 90vw;
+    overflow-wrap: break-word;
+  }
+
+  .project-card {
+    width: 90%;
+    margin-left: 18px;
+  }
+
+  .projects-grid {
+    padding: 20px;
+  }
+}
+
+/* prevent project section from causing overflow */
+.projects-grid {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.project-card {
+  max-width: 100%;
+}
+
+.skillpara {
+  max-width: 100%;
+}
+
+
 .footer{
   background: linear-gradient(to right, #1f1f1f, #3a3a3a);
   width: 100%;
@@ -1416,63 +1541,3 @@ h7 {
   
 }
 
-/* Fix for white space on mobile */
-
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-}
-
-@media only screen and (max-width: 400px) {
-  .introsection {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 0 10px;
-  }
-
-  #intro {
-    width: 100%;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  #introtitle,
-  #intropara,
-  .socialicons,
-  .buttons {
-    margin-left: 0 !important;
-  }
-
-  .skillpara,
-  .project-card,
-  .glass-card {
-    max-width: 90vw;
-    overflow-wrap: break-word;
-  }
-
-  .project-card {
-    width: 90%;
-    margin-left: 18px;
-  }
-
-  .projects-grid {
-    padding: 20px;
-  }
-}
-
-/* Optional: prevent project section from causing overflow */
-.projects-grid {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-.project-card {
-  max-width: 100%;
-}
-
-.skillpara {
-  max-width: 100%;
-}

@@ -617,8 +617,8 @@ h3{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    animation: darkGradientBG 6s ease infinite;
-    background-size: 100% 100%;
+    animation: darkGradientBG 8s ease infinite;
+    background-size: 400% 400%;
   }
 
   h3{
@@ -874,10 +874,7 @@ h3{
   }  
 
   @media screen and (max-width: 400px){
-    .skillsection{
-      background-size: 100% 100%;
-    }
-   
+     
     .center{
       width: 320px;
       height: 380px;
@@ -1374,7 +1371,7 @@ h7 {
   }
 
   .contact{
-    background-size: 100% 100%;
+    background-size: 800% 800%;
   }
 }
 

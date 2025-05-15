@@ -11,6 +11,9 @@
 
 <body>
     <header>
+
+        <!-- Navigation Pane -->
+
         <div id="siteheader">
             <span><img src="img/logo.PNG" alt="logo" id="logo"></span>
             
@@ -28,12 +31,29 @@
                   <span class="slider"></span>
               </label>
           </div> 
-          <div class="dropdown">
-            <button class="dropbtn"><img src="img/menu-bar.png" class="bars" alt=""></button>
-          </div> 
+          
+          <!-- For hamburger mobile menu -->
+
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <ul class="nav-menu">
+            <li><a href="#top" class="hamitem">Home</a></li>
+            <li><a href="#mysummary" class="hamitem">About</a></li>
+            <li><a href="#skillset" class="hamitem">Skills</a></li>
+            <li><a href="#certisection" class="hamitem">Showcase</a></li>
+            <li><a href="#contact" class="hamitem">Contact</a></li>
+            
+          </ul>
+
         </div>
 
         
+        <!-- Introduction section -->
 
      
         <section class="introsection">
@@ -61,6 +81,8 @@
 
     </header>
 
+      <!-- About section -->
+
     <main class="aboutsection" id="mysummary">
         <article id="aboutmee">
             <h2 class="abouthead">About <span class="highlight">me</span> </h2>
@@ -86,7 +108,7 @@
 
     </main>
     
-    
+    <!-- Skills section -->
 
     <main class="skillsection" id="skillset">
       <hr class="section-divider">
@@ -197,6 +219,7 @@
         </div> 
     </main>    
         
+      <!-- Showcase section begins -->
 
         <section id="certisection">
 
@@ -247,7 +270,7 @@
             </div>
           </article>
           
-      
+          <!-- Projects in showcase section -->
       
           <section class="projects-section" id="showcase">
             <h2 class="console-heading">&gt;_ Projects </h2>
@@ -310,6 +333,8 @@
           </div>
         </section>  
        </section> 
+
+       <!-- Contact section -->
         
         <section class="contact" id="contact">
           <div class="section">
@@ -326,6 +351,7 @@
           
        </section>
   
+       <!-- Footer section -->
 
     <footer class="footer">
       <div class="contactfooter">

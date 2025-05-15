@@ -28,7 +28,7 @@ header{
     height: 100vh;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.6)), url(../img/bgimage1.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6)), url(../img/bgimage1.webp);
     background-size: cover;
 }
 
@@ -201,6 +201,7 @@ header{
     font-weight: bold;
     justify-content: flex-end;
     align-items: center;
+    transition: all 1s;
 }
 
 .navitem:hover{
@@ -1005,7 +1006,7 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(rgba(0,0,0,0.8)), url(../img/bgimage.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8)), url(../img/bgimage.webp);
     background-size: cover;
     position: relative;
     padding-top: 65px;
@@ -1072,27 +1073,27 @@ h4{
  }
 
 #UCL{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/business.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/business.webp);
     color: azure;
     background-size: cover;
     text-align: right;
 }
 
 #BuLi{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/java.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/java.webp);
     background-size: cover;
     background-repeat: no-repeat;
     color: antiquewhite;
 }
 
 #EPL{
-    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/python.jpg) ;
+    background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/python.webp) ;
     background-size: cover;
     text-align: right;
     color: azure;
 }
 #laliga{
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/devops.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/devops.webp);
     background-size: cover;
     color: antiquewhite;
 }

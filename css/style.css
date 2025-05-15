@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
+/* CSS styling starts */
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -23,6 +25,7 @@ html, body {
   width: 100%;
 }
 
+/* Header section */
 
 header{
     height: 100vh;
@@ -181,6 +184,7 @@ header{
   }
 }
 
+/* Navigation Pane starts */
 
 .navbar {
     display: flex;
@@ -225,18 +229,9 @@ header{
     
 }
 
-.dropbtn{
-  background: transparent;
-  border: 0;
-  display: inline-block;
-}
-
-.bars{
-  height: 30px;
-  width: 30px;
-}
 
 
+/* Introduction section */
 
 
 .introsection{
@@ -375,6 +370,7 @@ header{
     transform: scale(1.1);
 }
 
+/* For responsiveness of this section */
 
 @media  only screen and (max-width: 840px) {
   #siteheader{
@@ -483,36 +479,33 @@ header{
   }
 
   #logo{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
 
   #siteheader{
-    height: 60px;
+    height: 50px;
   }
 
-  .dropdown{
-    display: block;
-    position: relative;
-    margin-right: 10px;
-  }
-
+  
 .toggle-switch{
   margin-right: 10px;
   width: 80px;
-  height: 40px;
+  height: 35px;
   position: relative;
 }
 
 .switch-label{
   border-radius: 25px;
   border: 3px solid var(--dark);
-  height: 40px;
+  height: 35px;
 }
 
 .slider::before{
-  top: 5px;
+  top: 4px;
   left: 5px;
+  height: 22px;
+  width: 22px;
 }
 
 .checkbox:checked ~ .slider::before {
@@ -663,6 +656,8 @@ h3{
     margin-right: 40px;
     margin-top: 40px;
 }
+
+/* For responsiveness */
 
 @media screen and (max-width: 840px) {
   #aboutmee{
@@ -877,6 +872,7 @@ h3{
     }
   }
   
+  /* Skill box styling */
 
   .centertwo{
     height: 600px;
@@ -1178,6 +1174,7 @@ h4{
   margin-top: 40px;
 }
 
+/* Project section with cards */
 
 .projects-section{
   padding: 30px;
@@ -1321,7 +1318,7 @@ h7 {
 }
 
 
-
+/* Contact section starts */
 
 
 .contact{
@@ -1500,6 +1497,7 @@ h7 {
   max-width: 100%;
 }
 
+/* Footer section begins */
 
 .footer{
   background: linear-gradient(to right, #1f1f1f, #3a3a3a);
